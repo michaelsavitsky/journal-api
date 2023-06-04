@@ -1,6 +1,5 @@
 from typing import Union
 from fastapi import FastAPI
-from astar_search import astar_search
 
 app = FastAPI()
 
