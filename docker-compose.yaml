@@ -1,0 +1,9 @@
+services:
+  api:
+    build: .
+    container_name: journal-api
+    ports:
+      - '8000:8000'
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    restart: "no"
