@@ -19,8 +19,16 @@ app.add_middleware(
 
 @app.get("/")
 def read_root():
-    return {"Hello": "World"}
-
-@app.get("/puzzle/")
-def get_puzzle_solution():
-    return "here would be the solution"
+    return {
+        "Persons": {
+            "Alek Stagram": "A Hellknight of the ",
+            "Warbal Bumblebrasher": "A goblin from the Bumblebrasher clan"
+        },
+        "Factions": {
+            "Hellknights": "An order of knights",
+            "Bumblebrashers": "A clan of goblins that had set up in the ruins of Castle Altaerein"
+        },
+        "Locations": {
+            "Breachill": "The town where the adventure began"
+        }
+    }
