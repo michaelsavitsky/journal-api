@@ -21,7 +21,8 @@ class EntryModel(BaseModel):
     id: PyObjectId = Field(default_factory=PyObjectId, alias="_id")
     name: str = Field(...)
     description: str = Field(...)
-    faction: Optional[str] = Field(...)
+    category: str = Field(...)
+    faction: Optional[str]
 
     class Config:
         allow_population_by_field_name = True,
