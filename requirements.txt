@@ -1,4 +1,5 @@
 fastapi
 numpy
 uvicorn
-watchfiles
+pydantic
+motor
